@@ -11,7 +11,7 @@ namespace UnsplashApp.Services
     {
         public const int MinSearchLength = 5;
 
-        private const string ClientIdParameter = "client_id=YOUR_ACCESS_KEY_HERE";
+        private const string ClientIdParameter = "client_id=";
 
         private const string UrlApi = "https://api.unsplash.com";
 

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnsplashApp.Pages.SearchPage">
+
+    <StackLayout>
+        <SearchBar 
+            Placeholder="Buscar..."
+            TextChanged="OnTextChanged">
+            <SearchBar.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="-1.0"
+                            Android="40.0"
+                            WinPhone="-1">
+                </OnPlatform>
+            </SearchBar.HeightRequest>
+        </SearchBar>
+
+        <ActivityIndicator IsRunning="{Binding IsSearching}" BackgroundColor="Black" />
+
+        <Frame x:Name="notFound" HasShadow="false" IsVisible="false" >
+            <Label Text="No se encontraron resultados." TextColor="Gray" />
+        </Frame>
+
+        <ListView x:Name="listView"  
+                  IsVisible="false" 
+                  ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell 
+						ImageSource="{Binding PhotoUrl}"
+						Text="{Binding UserName}" Detail="{Binding Description}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

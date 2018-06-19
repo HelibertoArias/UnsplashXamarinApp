@@ -9,7 +9,7 @@ namespace UnsplashApp.Models
 
  
 
-        [JsonProperty("thumb")]
+   
         public string Thumb { get; set; }
 
     }

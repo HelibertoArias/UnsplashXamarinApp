@@ -5,7 +5,7 @@ namespace UnsplashApp.Models
 {
     public class PhotoQueryResult
     {
-        [JsonProperty("results")]
+       
         public IEnumerable<Photo> Results { get; set; }
     }
 }

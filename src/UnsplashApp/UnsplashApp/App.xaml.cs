@@ -1,4 +1,5 @@
 using System;
+using UnsplashApp.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace UnsplashApp
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new NavigationPage( new SearchPage());
 		}
 
 		protected override void OnStart ()

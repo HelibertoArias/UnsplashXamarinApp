@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnsplashApp.Pages.DetailsPage">
+    <RelativeLayout>
+
+        <Image x:Name="poster" Source="{Binding PhotoRegularUrl}" Aspect="AspectFit"
+			RelativeLayout.WidthConstraint="{ConstraintExpression
+				Type=RelativeToParent,
+				Property=Width,
+				Factor=1
+				}"
+
+			RelativeLayout.HeightConstraint="{ConstraintExpression
+				Type=RelativeToParent,
+				Property=Height,
+				Factor=0.5
+				}"
+		/>
+
+        <ActivityIndicator
+            IsRunning="{Binding
+                            Source={x:Reference poster},
+                            Path=IsLoading 
+                        }"
+            Color="Black"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                                        Type=RelativeToParent,
+                                        Property=Width,
+                                        Factor=0.5,
+                                        Constant=-20
+                                    }"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                                        Type=RelativeToParent,
+                                        Property=Height,
+                                        Factor=0.25,
+                                        Constant=-20
+                                        }"/>
+        <StackLayout Padding="20"
+			RelativeLayout.YConstraint="{ConstraintExpression
+				                            Type=RelativeToView,
+				                            ElementName=poster,
+				                            Property=Height,
+				                            Factor=1
+				                        }">
+            <Label Text="{Binding UserName}" FontSize="30" />
+            <Label Text="{Binding Description}" FontSize="15" TextColor="Gray" />
+
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>
