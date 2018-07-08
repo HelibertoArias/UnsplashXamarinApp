@@ -4,20 +4,14 @@ namespace UnsplashApp.Models
 {
     public class Photo
     {
-        
         public string Id { get; set; }
 
-        
         public Urls Urls { get; set; }
 
-
-        
         public User User { get; set; }
 
-        
         public string Description { get; set; }
 
-        
         public string PhotoUrl
         {
             get
@@ -42,7 +36,6 @@ namespace UnsplashApp.Models
             {
                 return User.UserName;
             }
-
         }
     }
 }

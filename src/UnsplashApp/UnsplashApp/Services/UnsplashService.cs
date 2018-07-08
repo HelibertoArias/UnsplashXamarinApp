@@ -47,7 +47,5 @@ namespace UnsplashApp.Services
 
             return JsonConvert.DeserializeObject<Photo>(content);
         }
-
     }
-
 }

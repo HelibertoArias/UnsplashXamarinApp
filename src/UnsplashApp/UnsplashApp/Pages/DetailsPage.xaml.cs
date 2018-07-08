@@ -7,8 +7,8 @@ using Xamarin.Forms.Xaml;
 namespace UnsplashApp.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DetailsPage : ContentPage
-	{
+    public partial class DetailsPage : ContentPage
+    {
         private UnsplashService _photoService = new UnsplashService();
 
         private Photo _photo;

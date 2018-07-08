@@ -16,7 +16,7 @@
             </SearchBar.HeightRequest>
         </SearchBar>
 
-        <ActivityIndicator IsRunning="{Binding IsSearching}" BackgroundColor="Black" />
+        <ActivityIndicator IsRunning="{Binding IsSearching}"  />
 
         <Frame x:Name="notFound" HasShadow="false" IsVisible="false" >
             <Label Text="No se encontraron resultados." TextColor="Gray" />
