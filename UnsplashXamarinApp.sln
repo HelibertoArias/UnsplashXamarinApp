@@ -7,7 +7,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashApp.Android", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashApp.iOS", "src\UnsplashApp\UnsplashApp.iOS\UnsplashApp.iOS.csproj", "{BC8C9089-3C52-4612-9FFC-C756CF8659BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashApp", "src\UnsplashApp\UnsplashApp\UnsplashApp.csproj", "{A524EF3C-7B5D-4D6D-BF76-115ED3312B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnsplashApp", "src\UnsplashApp\UnsplashApp\UnsplashApp.csproj", "{A524EF3C-7B5D-4D6D-BF76-115ED3312B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{5AB528B3-9735-4330-8ADC-1F9CF69AA2AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{CF117A71-0BB8-494D-998D-AA58BA37372B}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\images\Screenshot-01.png = Documentation\images\Screenshot-01.png
+		Documentation\images\Screenshot-02.png = Documentation\images\Screenshot-02.png
+		Documentation\images\Screenshot-03.png = Documentation\images\Screenshot-03.png
+		Documentation\images\Screenshot-04.png = Documentation\images\Screenshot-04.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADCA8B1B-6F91-4633-8D97-E9AD4CA49D7E}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +123,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF117A71-0BB8-494D-998D-AA58BA37372B} = {5AB528B3-9735-4330-8ADC-1F9CF69AA2AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {730FC444-5204-4E57-AF87-90A12F9D7DB5}
